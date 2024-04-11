@@ -1,0 +1,8 @@
+server:
+  port: 8080
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://kanishkapanchal715:Cg3Rwb9bCQSRaTTK@productinventorycluster.a0jwlqc.mongodb.net/?retryWrites=true&w=majority&appName=ProductInventoryCluster
+      database : product_inventory
