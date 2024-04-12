@@ -15,13 +15,13 @@ import org.springframework.data.mongodb.repository.config.EnableMongoRepositorie
 public class MongoConfig {
 
     @Value("${spring.data.mongodb.uri}")
-    private static String connectionStringURI;
+    private  String connectionStringURI;
 
     @Value("${spring.data.mongodb.database}")
-    private static String databaseName;
+    private  String databaseName;
     @Bean
     public MongoClient mongo() {
-        ConnectionString connectionString = new ConnectionString(MongoConfig.connectionStringURI);
+        ConnectionString connectionString = new ConnectionString(connectionStringURI);
         MongoClientSettings mongoClientSettings = MongoClientSettings.builder()
                 .applyConnectionString(connectionString)
                 .build();
@@ -31,7 +31,7 @@ public class MongoConfig {
 
     @Bean
     public MongoTemplate mongoTemplate() throws Exception {
-        return new MongoTemplate(mongo(), MongoConfig.databaseName);
+        return new MongoTemplate(mongo(), databaseName);
     }
 }
 

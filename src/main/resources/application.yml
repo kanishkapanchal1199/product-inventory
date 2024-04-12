@@ -4,5 +4,5 @@ server:
 spring:
   data:
     mongodb:
-      uri: mongodb+srv://kanishkapanchal715:Cg3Rwb9bCQSRaTTK@productinventorycluster.a0jwlqc.mongodb.net/?retryWrites=true&w=majority&appName=ProductInventoryCluster
+      uri: mongodb+srv://capcutapk123:hXipLjJLjpbuueLl@inventoryproductcluster.2hbdko3.mongodb.net/?retryWrites=true&w=majority&appName=InventoryProductCluster
       database : product_inventory
