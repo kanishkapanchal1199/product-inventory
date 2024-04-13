@@ -16,7 +16,7 @@ Java 17,Springboot 3.2.4,Spring Security,MongoDb Atlas,Swagger API Documentation
 
 # Spring Security Basic Authentication :
 
-Before Accessing above all REST API endpoints Authorization needs to done with **Basic Auth** , Below are the credentails to access all of the REST API Endpoints.
+Before Accessing below all REST API endpoints Authorization needs to done with **Basic Auth** , Below are the credentails to access all of the REST API Endpoints.
 
 Username : Kanishka
 <Br/>
