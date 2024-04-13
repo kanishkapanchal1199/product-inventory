@@ -116,8 +116,7 @@ class ProductControllerTest {
 
     @Test
     void testUpdateProductById_WhenProductDoesNotExist() {
-        // Test case for updating a non-existing product
-        String id = "2"; // Assuming product with ID 2 does not exist
+        String id = "2";
         Product product = new Product(id, "Test Product", "Description", 10.0, 5);
         when(productService.getProductById(id)).thenReturn(Optional.empty());
 
